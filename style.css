@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Dongle&family=Open+Sans:wght@500&family=Passion+One&family=Poppins:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
@@ -15,17 +15,18 @@
 
     --fonte-titulo: 'Press Start 2P', sans-serif;
     --fonte-subtitulo: 'Mono', monospace;
-    --fonte-padrao: 'Crimson', serif;
+    --fonte-padrao: 'Crimson Text', serif;
 }
 
 *{
     margin: 0px;
     padding: 0px;
-
 }
 
-html,body{
-    min-height: 100vh;
+
+body,html{
+    width: 100vw;
+    height: 100vh;
 }
 
 header{
@@ -62,7 +63,7 @@ nav > a {
     font-weight: 500;
     padding: 10px;
     text-align: left;
-    max-width: 680;
+    max-width: 680px;
 }
 
 nav > a:hover{
@@ -79,14 +80,98 @@ body{
     background-image: linear-gradient(to right, rgb(68, 77, 216), var(--cor2));
 }
 
-main > h1{
+div#imagem{
+    background-image: url('imagens/imagemdefunto.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 27%;
+    top:43%;
+    bottom: 20%;
+    right: 30%;
+    width: 622px;
+    height:622px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+div#dentrodaimagem{
+    position: absolute;
+    left: 35%;
+    top:44%;
+    max-width: 467px;
+    max-height: 343px;
+    margin: auto;
+}
+
+div > h1{
+    text-align: center;
+}
+
+div > h2{
+    text-align: justify;
+    padding-top: 42px;
+    text-indent: 2em;
+}
+
+div > a{
+    font-family: var(--fonte-padrao);
+    font-size: 1.4em;
+    background-color: var(--cor4);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 178%;
+    left: 7%;
+    padding: 0.8em;
+}
+
+div > a:hover{
+    text-decoration: underline;
+}
+
+div > img{
+    position: absolute;
+    top:117%;
+    left:48%;
+    width: 250px;
+    height: 250px;
+
+}
+
+main{
+    position: absolute;
+    left: 27%;
+    top: 93%;
+    margin: auto;
+    width: 800px;
+}
+
+div#conteudo{
+    margin: auto;
+    min-width: 600px;
+    max-width: 800px;
+    position: absolute;
+    left: 27%;
+    top: 93%;
+    justify-content: center;
+    background-color: white;
+}
+
+h1{
     font-family: var(--fonte-titulo);
 }
 
-main > h2{
+h2{
     font-family: var(--fonte-subtitulo);
 }
 
-main > p{
+h3{
+    font-family: var(--fonte-subtitulo);
+}
+
+p{
     font-family: var(--fonte-padrao);
 }
