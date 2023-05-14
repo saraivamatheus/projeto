@@ -12,6 +12,9 @@
     --cor3:#2D4BE0;
     --cor4:#303961;
     --cor5:#233AAD;
+    --cor6:#474784;
+    --cor7:#B93B42;
+
 
     --fonte-titulo: 'Press Start 2P', sans-serif;
     --fonte-subtitulo: 'Mono', monospace;
@@ -34,7 +37,7 @@ header{
     width:100vw;
     min-height: 200px;
     max-height: 250px;
-    background-color: var(--cor3);
+    background-image: linear-gradient(to left, var(--cor5), var(--cor7) );
     box-shadow: 0px 5px 5px 0px rgb(4, 16, 82);
     padding: 8px;
 }
@@ -143,23 +146,17 @@ div > img{
 }
 
 main{
-    position: absolute;
-    left: 29%;
-    top: 93%;
-    margin: auto;
-    width: 800px;
-}
-
-div#conteudo{
     margin: auto;
     min-width: 600px;
     max-width: 800px;
     position: absolute;
-    right: 8%;
-    top: 93%;
-    justify-content: center;
-    background-color: white;
+    right: 31%;
+    top: 94%;
+    text-align: center;
+    background-image: linear-gradient(to left, var(--cor3), var(--cor7));
+    border-radius: 8px;
 }
+
 
 h1{
     font-family: var(--fonte-titulo);
