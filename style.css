@@ -27,6 +27,7 @@
 body,html{
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 header{
@@ -143,7 +144,7 @@ div > img{
 
 main{
     position: absolute;
-    left: 27%;
+    left: 29%;
     top: 93%;
     margin: auto;
     width: 800px;
@@ -154,7 +155,7 @@ div#conteudo{
     min-width: 600px;
     max-width: 800px;
     position: absolute;
-    left: 27%;
+    right: 8%;
     top: 93%;
     justify-content: center;
     background-color: white;
