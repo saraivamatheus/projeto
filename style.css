@@ -35,10 +35,8 @@ body,html{
 
 header{
     width:100vw;
-    min-height: 200px;
-    max-height: 250px;
+    height: 150px;
     background-image: linear-gradient(to left, var(--cor5), var(--cor7) );
-    box-shadow: 0px 5px 5px 0px rgb(4, 16, 82);
     padding: 8px;
 }
 
@@ -47,7 +45,7 @@ header > h1{
     text-align: center;
     vertical-align: auto;
     font-family: var(--fonte-titulo);
-    font-size: 4vw;
+    font-size: 3vw;
     font-variant: small-caps;
     padding: 25px;
 
@@ -59,19 +57,27 @@ header > img{
     height: 125px;
 }
 
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    background-color: var(--cor1);
+    border-radius: 8px;
+    box-shadow: 0px 5px 5px 0px rgb(4, 16, 82);
+}
+
 nav > a {
     color: white;
     text-decoration: none;
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-family: var(--fonte-padrao);
     font-weight: 500;
-    padding: 10px;
     text-align: left;
-    max-width: 680px;
+    padding: 8px;
 }
 
 nav > a:hover{
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     border-radius: 8px;
     transition: all 0.4s;
 }
@@ -85,51 +91,40 @@ body{
 }
 
 div#imagem{
+    position: relative;
     background-image: url('imagens/imagemdefunto.png');
     background-repeat: no-repeat;
-    position: absolute;
-    left: 27%;
-    top:43%;
-    bottom: 20%;
-    right: 30%;
     width: 622px;
-    height:622px;
+    height: 622px;
     margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: auto;
-}
-
-div#dentrodaimagem{
-    position: absolute;
-    left: 35%;
-    top:44%;
-    max-width: 467px;
-    max-height: 343px;
-    margin: auto;
+    margin-top: 100px;
 }
 
 div > h1{
+    padding-top: 142px;
     text-align: center;
 }
 
 div > h2{
     text-align: justify;
-    padding-top: 42px;
+    padding-top: 46px;
+    padding-left: 64px;
     text-indent: 2em;
+    max-width: 475px;
 }
 
 div > a{
+    float: left;
+    margin-top: 90px;
+    margin-left: 77px;
     font-family: var(--fonte-padrao);
-    font-size: 1.4em;
+    font-size: 1.6em;
     background-color: var(--cor4);
-    border-radius: 8px;
+    border-radius: 12px;
     color: white;
     text-decoration: none;
-    position: absolute;
-    top: 178%;
-    left: 7%;
-    padding: 0.8em;
+    padding: 1em;
+    
 }
 
 div > a:hover{
@@ -137,24 +132,17 @@ div > a:hover{
 }
 
 div > img{
-    position: absolute;
-    top:117%;
-    left:48%;
+    margin-left: 46px;
+    margin-top: 33px;
     width: 250px;
     height: 250px;
-
 }
 
 main{
+    padding: 5px;
     margin: auto;
-    min-width: 600px;
-    max-width: 800px;
-    position: absolute;
-    right: 31%;
-    top: 94%;
-    text-align: center;
-    background-image: linear-gradient(to left, var(--cor3), var(--cor7));
-    border-radius: 8px;
+    width: 1000px;
+    height: 1000px;
 }
 
 
