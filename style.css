@@ -15,7 +15,7 @@
     --cor4:#303961;
     --cor5:#233AAD;
     --cor6:#474784;
-    --cor7:#B93B42;
+    --cor7:#945356;
 
 
     --fonte-titulo: 'Press Start 2P', sans-serif;
@@ -38,7 +38,7 @@ body,html{
 header{
     width:100vw;
     height: 150px;
-    background-image: linear-gradient(to left, var(--cor5), var(--cor7) );
+    background-image: linear-gradient(to right, var(--cor5), var(--cor7) );
     padding: 8px;
 }
 
@@ -89,7 +89,7 @@ nav > a:active{
 }
 
 body{
-    background-image: linear-gradient(to right, rgb(68, 77, 216), var(--cor2));
+    background-color: var(--cor2);
 }
 
 div#imagem{
@@ -143,10 +143,14 @@ div > img{
 main{
     padding: 5px;
     margin: auto;
-    width: 1000px;
-    height: 1000px;
+    width: 1200px;
+    height: 1200px;
 }
 
+
+a{
+    color: white;
+}
 
 h1{
     font-family: var(--fonte-titulo);
@@ -162,9 +166,14 @@ h3{
     color: rgb(255, 255, 255);
 }
 
-main .texto{
+.texto{
     font-family: 'Montserrat', sans-serif;
-    color: rgb(255, 255, 255);
+    color: white;
+}
+
+.texto-imagem{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 main .p-cor{
@@ -191,6 +200,7 @@ section.p-img{
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.432);
     background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 section#espaco{
@@ -201,6 +211,22 @@ section#espaco{
 
 section#img1{
     background-position: center;
+    background-image: url('imagens/img-1.jpg');
+}
+
+section#img2{
+    background-position: center;
+    background-image: url('imagens/img-2.jpg');
+}
+
+section#img3{
+    background-position: center;
+    background-image: url('imagens/img-3.jpg');
+}
+
+section#img4{
+    background-position: top;
+    background-image: url('imagens/img-4.png');
 }
 
 .rodape{
@@ -231,6 +257,27 @@ section#img1{
     width: calc(100% / 4 - 20px);
     padding: 10px;
 }
+
+.rodape-div-3-coluna{
+    margin-left: 80px;
+    text-align: center;
+}
+
+footer > .rodape-div-4 > span{
+    margin-left: 30px;
+}
+
+#logo{
+    width: 110px;
+    height: 100px;
+    margin-left: 85px;
+    margin-bottom: 10px;
+}
+
+.rodape-div-4{
+    justify-content: center;
+}
+
 .rodape span{
     font-size: 20px;
     color: white;
@@ -239,16 +286,14 @@ section#img1{
     width: calc(100% - 20px);
     background-color: black;
     padding: 10px;
-    margin: 0px;
     text-align: center;
 }
-/*mobile*/
-@media (max-width: 768px) {
-    .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
-        width: calc(50% - 20px);
-        padding: 10px;
-    }
-    .rodape-div{
-        padding: 60px 0px 40px 0px;
-    }
+
+#parceria{
+    width: 255px;
+    height: 58px;
+}
+
+#centro{
+    margin-left: 115px;
 }
